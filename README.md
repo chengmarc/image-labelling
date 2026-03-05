@@ -18,7 +18,7 @@ This project replicates established image classification results across four ben
 
 **MNIST** [3] is a grayscale handwritten digit dataset of 70,000 images (60,000 train / 10,000 test) at 28×28 resolution, covering 10 digit classes. It serves as a standard baseline for evaluating convolutional architectures.
 
-**EMNIST** [4] extends MNIST to handwritten letters, using the same 28×28 format. The Letters split covers 26 classes with substantially more within-class variation than digits, making classification meaningfully harder despite identical image dimensions.
+**EMNIST** [4] extends MNIST to handwritten letters and digits, using the same 28×28 format. The Balanced split covers 47 classes (digits and upper/lower case letters merged where similar), with substantially more within-class variation than digits, making classification meaningfully harder despite identical image dimensions.
 
 **CIFAR-10** [5] contains 60,000 RGB images at 32×32 resolution across 10 object categories (airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck), split 50,000/10,000 for train and test.
 
@@ -36,7 +36,7 @@ This project replicates established image classification results across four ben
 
 ### 2.1 ConvNet
 
-The ConvNet used for MNIST and EMNIST follows the classical convolutional architecture introduced by LeCun et al. [1]: alternating convolutional and pooling layers extract spatial features, followed by fully connected layers that map the resulting feature representation to class logits. Batch normalization and dropout are applied for regularization.
+The ConvNet used for MNIST and EMNIST follows the classical convolutional architecture introduced by LeCun et al. [1]: alternating convolutional and pooling layers extract spatial features, followed by fully connected layers that map the resulting feature representation to class logits.
 
 ### 2.2 ResNet
 
